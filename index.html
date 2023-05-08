@@ -3,59 +3,69 @@
   <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-rugKjcd4SzpZ0Rz4e9XOSK4zAf3tpMNBQ1ySrq8JYgjKKTbPZIeRZ4F4nL/4ktFb1sTfVtjKpVEwJLUmCCDTlw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="container py-3">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <h1 class="my-0 mr-lg-auto font-weight-normal">My Portfolio</h1>
+        <nav class="my-2 my-lg-0">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    
-    <main>
+
+    <main class="container py-3">
       <section id="about">
         <h2>About Me</h2>
         <p>Insert information about yourself here.</p>
       </section>
-      
+
       <section id="projects">
         <h2>My Projects</h2>
-        <ul>
-          <li>
+        <ul class="list-group">
+          <li class="list-group-item">
             <h3>Project 1</h3>
             <p>Description of project 1.</p>
-            <a href="path/to/project1.pdf">View PDF</a>
-            <audio controls>
-              <source src="path/to/project1.mp3" type="audio/mpeg">
-            </audio>
+            <div class="d-flex align-items-center">
+              <a class="btn btn-primary me-3" href="path/to/project1.pdf">View PDF</a>
+              <audio controls>
+                <source src="path/to/project1.mp3" type="audio/mpeg">
+              </audio>
+            </div>
           </li>
-          
-          <li>
+
+          <li class="list-group-item">
             <h3>Project 2</h3>
             <p>Description of project 2.</p>
-            <a href="path/to/project2.pdf">View PDF</a>
-            <audio controls>
-              <source src="path/to/project2.mp3" type="audio/mpeg">
-            </audio>
+            <div class="d-flex align-items-center">
+              <a class="btn btn-primary me-3" href="path/to/project2.pdf">View PDF</a>
+              <audio controls>
+                <source src="path/to/project2.mp3" type="audio/mpeg">
+              </audio>
+            </div>
           </li>
-          
+
           <!-- add more projects here -->
         </ul>
       </section>
-      
+
       <section id="contact">
         <h2>Contact Me</h2>
         <p>Insert contact information here.</p>
       </section>
     </main>
-    
-    <footer>
-      <p>&copy; 2023 Gavin Pinto</p>
-    </footer>
-  </body>
-</html>
 
+    <footer class="bg-light py-3">
+      <div class="container text-center">
+        <p>&copy; 2023 My Portfolio</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-FsTtppKJZgahTb7EoXlKjV7g
